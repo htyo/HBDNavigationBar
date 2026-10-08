@@ -219,8 +219,8 @@ static void hbd_exchangeImplementations(Class class, SEL originalSelector, SEL s
     }
 
     if (@available(iOS 26.0, *)) {
-        // 如果 context 是 UIView，先尝试通过遍历 subviews 查找包含 "ContentView" 的视图
-        if ([context isKindOfClass:[UIView class]]) {
+        // contentView 在 iOS 26 上需要通过遍历 subviews 查找
+        if ([keyPath isEqualToString:@"visualProvider.contentView"] && [context isKindOfClass:[UIView class]]) {
             UIView *view = (UIView *)context;
             __block UIView *contentView = nil;
 

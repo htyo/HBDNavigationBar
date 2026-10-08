@@ -37,6 +37,7 @@
 		91BFA158238E759200A9623E /* EViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFA157238E759200A9623E /* EViewController.m */; };
 		91BFA15B238E75A900A9623E /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BFA15A238E75A900A9623E /* FViewController.m */; };
 		91DBF5C5219183800019F7A0 /* DViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DBF5C4219183800019F7A0 /* DViewController.m */; };
+		BD0EB46A307780D200A485C2 /* HBDSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0EB469307780D200A485C2 /* HBDSceneDelegate.m */; };
 		CD671FD8AE21609722E04CF8 /* libPods-HBDNavigationBar_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A13908942A92DA17B0E2C267 /* libPods-HBDNavigationBar_Example.a */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,8 @@
 		A12383705CD9091B97E204F7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A13908942A92DA17B0E2C267 /* libPods-HBDNavigationBar_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBDNavigationBar_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4CB778013B4106CEE199CD0 /* Pods-HBDNavigationBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBDNavigationBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBDNavigationBar_Example/Pods-HBDNavigationBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BD0EB468307780D200A485C2 /* HBDSceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBDSceneDelegate.h; sourceTree = "<group>"; };
+		BD0EB469307780D200A485C2 /* HBDSceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBDSceneDelegate.m; sourceTree = "<group>"; };
 		EDF8011858C0F08178E05507 /* libPods-HBDNavigationBar_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBDNavigationBar_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10CA745C33C3DA26A969DE6 /* Pods-HBDNavigationBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBDNavigationBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBDNavigationBar_Example/Pods-HBDNavigationBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +177,8 @@
 			children = (
 				6003F59C195388D20070C39A /* HBDAppDelegate.h */,
 				6003F59D195388D20070C39A /* HBDAppDelegate.m */,
+				BD0EB468307780D200A485C2 /* HBDSceneDelegate.h */,
+				BD0EB469307780D200A485C2 /* HBDSceneDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -408,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91245721208780AB0094CAFE /* YPGradientDemoViewController.m in Sources */,
+				BD0EB46A307780D200A485C2 /* HBDSceneDelegate.m in Sources */,
 				9182FBC52180570900D6BE8F /* BViewController.m in Sources */,
 				91142232233F538D00D8F6E6 /* HBDPushAnimation.m in Sources */,
 				91BFA15B238E75A900A9623E /* FViewController.m in Sources */,
@@ -518,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,7 +572,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
